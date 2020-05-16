@@ -15,6 +15,8 @@ sudo apt update && sudo apt dist-upgrade
 
 ## 配置环境变量和安装必备软件
 
+<!-- more -->
+
 #### 修改 hosts
 1. 打开 https://raw.githubusercontent.com/googlehosts/hosts/master/hosts-files/hosts ，并将其中的内容复制到 /etc/hosts 中
 2. 复制以下到 /etc/hosts 中：
