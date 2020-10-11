@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://gmaso-cn.eu.org
+url: http://gmaso.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -228,3 +228,8 @@ theme_config:
   css: css
   js: js
   images: images
+
+  footer:
+    beian: '渝ICP备18006361号-1'
+
+  use_motion: false
