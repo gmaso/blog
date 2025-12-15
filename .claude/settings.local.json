@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(if [ -f .gitignore ])",
+      "Bash(then cat .gitignore)",
+      "Bash(else echo \"File does not exist\")",
+      "Bash(fi)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(PORT=3001 npm run dev:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'prismjs/themes/prism-tomorrow.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* 代码块样式优化 */
+pre[class*="language-"] {
+  @apply rounded-lg my-6;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply text-sm;
+}
+
+/* 行号样式 */
+.line-numbers .line-numbers-rows {
+  @apply border-r border-gray-700;
+}
