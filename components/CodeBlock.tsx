@@ -72,6 +72,14 @@ export default function CodeBlock() {
       // 将按钮添加到代码块
       const wrapper = document.createElement('div')
       wrapper.className = 'code-block-wrapper'
+
+      // 检测是否为单行代码块
+      const code = block.querySelector('code')
+      const lineCount = code?.textContent?.split('\n').filter(line => line.trim()).length || 0
+      if (lineCount <= 1) {
+        wrapper.classList.add('single-line')
+      }
+
       block.parentNode?.insertBefore(wrapper, block)
       wrapper.appendChild(block)
       wrapper.appendChild(buttonContainer)

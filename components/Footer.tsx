@@ -17,19 +17,9 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="text-center space-y-2">
+          <div className="text-center">
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               © 2025 Gmaso. All rights reserved.
-            </p>
-            <p>
-              <a
-                href="https://beian.miit.gov.cn/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 dark:text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors text-sm"
-              >
-                渝ICP备18006361号-1
-              </a>
             </p>
           </div>
 

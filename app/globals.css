@@ -240,6 +240,12 @@ pre[class*="language-"] {
   z-index: 10;
 }
 
+/* 单行代码块的复制按钮居中 */
+.code-block-wrapper.single-line .copy-button-container {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .copy-button {
   display: flex;
   align-items: center;
